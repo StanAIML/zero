@@ -6,6 +6,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 aims to follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html) once the first release is
 tagged. Until then, source builds report the version `dev`.
 
+## [0.3.1](https://github.com/Gitlawb/zero/compare/v0.3.0...v0.3.1) (2026-07-10)
+
+
+### Bug Fixes
+
+* **acp:** make truncateHint rune-safe ([#614](https://github.com/Gitlawb/zero/issues/614)) ([ddc4927](https://github.com/Gitlawb/zero/commit/ddc4927aac5544bf4dd2c46615aeda5a81c96576))
+* **agent,tui:** resolve git branch detection when starting Zero in subdirectories ([#613](https://github.com/Gitlawb/zero/issues/613)) ([0184581](https://github.com/Gitlawb/zero/commit/0184581ec234ea414e0a47bc33e8b0f4ddfb497b))
+* **cli:** prevent consuming positional arguments as flag values ([#619](https://github.com/Gitlawb/zero/issues/619)) ([5b4f48d](https://github.com/Gitlawb/zero/commit/5b4f48d2dcb66402c13bde0c3cfe9c9371da19fb))
+* **cron:** prevent cron job Mutate from clobbering concurrent updates ([#630](https://github.com/Gitlawb/zero/issues/630)) ([e4bd703](https://github.com/Gitlawb/zero/commit/e4bd703cfb28dab2dfa3c2ddba46237e1bb2e164))
+* **daemon:** handle os.ErrPermission as collision during O_EXCL lock creation ([#616](https://github.com/Gitlawb/zero/issues/616)) ([8ea5384](https://github.com/Gitlawb/zero/commit/8ea53841a5d54c37a153779ae86bea010659433c))
+* **exec:** stop false INCOMPLETE downgrades on conversational final messages ([#608](https://github.com/Gitlawb/zero/issues/608)) ([b6117af](https://github.com/Gitlawb/zero/commit/b6117af86d6bc87a4ee66910e99d76cb16b03fed))
+* harden MCP credential boundaries ([#597](https://github.com/Gitlawb/zero/issues/597)) ([fdddb05](https://github.com/Gitlawb/zero/commit/fdddb05ba84b1600ae6c3a20028bf83afe474c44))
+* **hooks:** fail closed on launch failures for beforeTool hooks ([#629](https://github.com/Gitlawb/zero/issues/629)) ([dc06fe7](https://github.com/Gitlawb/zero/commit/dc06fe72caf45f72d2cba1e8a835c0f5b405c1e8))
+* **openai:** omit prompt_cache_key for openai-compatible providers ([#636](https://github.com/Gitlawb/zero/issues/636)) ([1af5882](https://github.com/Gitlawb/zero/commit/1af58828eb3c22567599c000736c913a290959d2)), closes [#624](https://github.com/Gitlawb/zero/issues/624)
+* **sandbox:** remove windowsWriteRestricted flag to fix DenyRead bypass ([#612](https://github.com/Gitlawb/zero/issues/612)) ([3d96ac7](https://github.com/Gitlawb/zero/commit/3d96ac7e55c760a97f28c0e6ceaf1ec3b4ab717a))
+* **securefile:** reclaim stale lock files to prevent permanent DOS ([#615](https://github.com/Gitlawb/zero/issues/615)) ([8536cc8](https://github.com/Gitlawb/zero/commit/8536cc87f7a885f9e436d6ef28f5f325201623dc))
+* **tools:** preserve SysProcAttr during PTY fallback ([#618](https://github.com/Gitlawb/zero/issues/618)) ([f78b36c](https://github.com/Gitlawb/zero/commit/f78b36c770daa4577a9f99265b18a354454e36eb))
+* **tui:** resolve pending askUser callbacks to prevent runner hangs ([#620](https://github.com/Gitlawb/zero/issues/620)) ([aa73a76](https://github.com/Gitlawb/zero/commit/aa73a76f1bd1b6fe97bac2fbff2d61b7474139f2))
+* **windows:** resolve absolute path for taskkill to prevent hijacking ([#617](https://github.com/Gitlawb/zero/issues/617)) ([2db00ee](https://github.com/Gitlawb/zero/commit/2db00ee3d57db97e0fbe23cb8628e8bcb47f6f09))
+
 ## [0.3.0](https://github.com/Gitlawb/zero/compare/v0.2.0...v0.3.0) (2026-07-09)
 
 
